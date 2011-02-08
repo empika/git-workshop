@@ -9,6 +9,10 @@
     $ git config --global user.name "George Bashi"
     $ git config --global user.email "jamil@georgebashi.com"
 
+## Also (if you like) ##
+    $ git config --global color.diff auto
+    $ git config --global color.status auto
+    $ git config --global color.branch auto
 !SLIDE bullets smaller
 # Grab a repo to play with #
 * `git clone https://github.com/georgebashi/git-workshop.git`
@@ -40,3 +44,55 @@
     Your bundle is complete! ...
     
     # edit away!
+
+!SLIDE commandline incremental
+# Prepare a patch #
+    $ git status
+    # On branch master
+    # Changed but not updated:
+    #   (use "git add <file>..." to update what will be committed)
+    #   (use "git checkout -- <file>..." to discard changes in working directory)
+    #
+    #	modified:   what/what.md
+    #
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+    $ git add what/what.md
+    
+    $ git status
+    # On branch master
+    # Changes to be committed:
+    #   (use "git reset HEAD <file>..." to unstage)
+    #
+    #	modified:   what/what.md
+    #
+
+!SLIDE commandline incremental
+# Commit #
+    $ git commit
+    [master 54c9698] correct definition of what git is
+     1 files changed, 1 insertions(+), 1 deletions(-)
+    
+    $ git log
+    commit 54c969892785d09a58274b227fcbb470641d6810
+    Author: George Bashi <jamil@georgebashi.com>
+    Date:   Tue Feb 8 15:34:55 2011 +0000
+
+        correct definition of what git is
+
+    commit 5968bcaea08c07b2a7d73e58734c5078fa0d21f1
+    Author: George Bashi <jamil@georgebashi.com>
+    Date:   Tue Feb 8 15:15:03 2011 +0000
+
+        add the first blob of content
+
+!SLIDE center
+# Fork me! #
+![fork](fork.png)
+
+!SLIDE commandline
+# Add the new remote #
+![remote](remote.png)
+
+    $ git remote add github git@github.com:georgebashi-test/git-workshop.git
+    $ git push github master
