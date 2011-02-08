@@ -8,6 +8,6 @@
 
 !SLIDE bullets incremental
 # What is Git? #
-* a Directed Acyclic Graph Database of Diffs
+* a Directed Acyclic Graph Database of Patches
 * Distributed (no server)
 * Easy (trust me!)
