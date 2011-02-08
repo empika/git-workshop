@@ -96,3 +96,15 @@
 
     $ git remote add github git@github.com:georgebashi-test/git-workshop.git
     $ git push github master
+    Counting objects: 9, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (6/6), done.
+    Writing objects: 100% (6/6), 116.58 KiB, done.
+    Total 6 (delta 1), reused 0 (delta 0)
+    To git@github.com:georgebashi-test/git-workshop.git
+       54c9698..90446e7  master -> master
+
+!SLIDE
+# Send me a pull request #
+![pull-request](pull-request.png)
+## I'll accept :) ##
