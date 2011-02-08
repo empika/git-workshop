@@ -5,6 +5,7 @@ These are the slides (and example git repo) for the workshop at [dotBrighton](ht
 ## Installation ##
 
 You'll need the following to work with this repo (and the workshop):
+
 * Git (obviously)
 * Ruby
 * The `heroku` and `showoff` gems (`gem install heroku showoff`)
