@@ -1,6 +1,5 @@
-!SLIDE bullets incremental
+!SLIDE bullets
 # Let's get started #
-
 * Bookmark me: [http://cheat.errtheblog.com/s/git](http://cheat.errtheblog.com/s/git)
 * Print me: [http://bit.ly/id98qP](http://bit.ly/id98qP)
 
@@ -8,11 +7,20 @@
 # Introduce yourself to Git #
     $ git config --global user.name "George Bashi"
     $ git config --global user.email "jamil@georgebashi.com"
-
 ## Also (if you like) ##
     $ git config --global color.diff auto
     $ git config --global color.status auto
     $ git config --global color.branch auto
+
+!SLIDE commandline
+# Set your editor #
+## Mac ##
+    $ git config --global core.editor "mate -w"
+## Linux ##
+    $ git config --global core.editor "nano"
+## Windows ##
+### You're <del>stuck with</del> blessed with vim ###
+
 !SLIDE bullets smaller
 # Grab a repo to play with #
 * `git clone https://github.com/georgebashi/git-workshop.git`
