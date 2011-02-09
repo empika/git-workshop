@@ -1,6 +1,3 @@
 !SLIDE
-# George Bashi #
+# dotBrighton Git Workshop #
 ## @georgebashi ##
-
-!SLIDE
-# Interactives #
