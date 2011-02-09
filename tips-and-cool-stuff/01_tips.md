@@ -7,5 +7,5 @@
 !SLIDE bullets incremental
 # Handy tools #
 * git-flow ([https://github.com/nvie/gitflow](https://github.com/nvie/gitflow)) automates branching and merging
-* git-svn lets you use git as a svn client
+* git-svn lets you use git as an svn client
 * meld ([http://meld.sf.net/](http://meld.sf.net/)) is good for difficult merges
