@@ -26,7 +26,7 @@
 ## [https://github.com/georgebashi/git-workshop](https://github.com/georgebashi/git-workshop) ##
 ![fork](fork.png)
 
-!SLIDE bullets smaller
+!SLIDE bullets smaller center
 # Grab a copy #
 * `git clone https://github.com/yourname/git-workshop.git`
 * ![url](url.png)
@@ -112,7 +112,7 @@
     To git@github.com:georgebashi/git-workshop.git
        a077d82..da418d1  master -> master
 
-!SLIDE
+!SLIDE center
 # Send me a pull request #
 ![pull-request](pull-request.png)
 ## I'll accept :) ##
