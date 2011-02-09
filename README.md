@@ -8,7 +8,7 @@ You'll need the following to work with this repo (and the workshop):
 
 * Git (obviously)
 * Ruby
-* The `heroku` and `showoff` gems (`gem install heroku showoff`)
+* The `bundler` and `showoff` gems (`gem install bundler showoff`)
 
 ## Contrib guidelines ##
 
