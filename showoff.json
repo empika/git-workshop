@@ -2,8 +2,7 @@
   "name": "dotBrighton Git Workshop",
   "sections": [
     {"section": "about-me"},
-    {"section": "why"},
-    {"section": "what"},
-    {"section": "get-started"}
+    {"section": "get-started"},
+    {"section": "programming-jokes"}
   ]
 }
