@@ -21,9 +21,14 @@
 ## Windows ##
 ### You're <del>stuck with</del> blessed with vim ###
 
+!SLIDE center
+# Fork me! #
+## [https://github.com/georgebashi/git-workshop](https://github.com/georgebashi/git-workshop) ##
+![fork](fork.png)
+
 !SLIDE bullets smaller
-# Grab a repo to play with #
-* `git clone https://github.com/georgebashi/git-workshop.git`
+# Grab a copy #
+* `git clone https://github.com/yourname/git-workshop.git`
 * ![url](url.png)
 
 !SLIDE commandline incremental
@@ -40,45 +45,38 @@
     $ ls
     Gemfile      README.md    config.ru    get-started  what
     Gemfile.lock about-me     differences  showoff.json why
-    
-    $ gem install bundler --no-rdoc --no-ri
-    Successfully installed bundler-1.0.10
-    1 gem installed
-    
-    $ bundle install
-    Using bluecloth (2.0.10)
-    ...
-    ...
-    Your bundle is complete! ...
-    
-    # edit away!
+
+!SLIDE commandline incremental
+# Create a feature branch #
+    $ git checkout -b add-joke
 
 !SLIDE commandline incremental
 # Prepare a patch #
     $ git status
-    # On branch master
+    # On branch add-joke
     # Changed but not updated:
     #   (use "git add <file>..." to update what will be committed)
     #   (use "git checkout -- <file>..." to discard changes in working directory)
     #
-    #	modified:   what/what.md
+    #	modified:   programming-jokes/jokes.md
     #
     no changes added to commit (use "git add" and/or "git commit -a")
 
-    $ git add what/what.md
+    $ git add programming-jokes/jokes.md
     
     $ git status
-    # On branch master
+    # On branch add-joke
     # Changes to be committed:
     #   (use "git reset HEAD <file>..." to unstage)
     #
-    #	modified:   what/what.md
+    #	modified:   programming-jokes/jokes.md
     #
 
 !SLIDE commandline incremental
 # Commit #
+### Windows: press `i` to type, press `ESC :wq ENTER` to save and quit ###
     $ git commit
-    [master 54c9698] correct definition of what git is
+    [add-joke 54c9698] add a funny joke
      1 files changed, 1 insertions(+), 1 deletions(-)
     
     $ git log
@@ -86,31 +84,22 @@
     Author: George Bashi <jamil@georgebashi.com>
     Date:   Tue Feb 8 15:34:55 2011 +0000
 
-        correct definition of what git is
+        add a funny joke
 
-    commit 5968bcaea08c07b2a7d73e58734c5078fa0d21f1
-    Author: George Bashi <jamil@georgebashi.com>
-    Date:   Tue Feb 8 15:15:03 2011 +0000
+    ...
 
-        add the first blob of content
+    (press q to exit)
 
-!SLIDE center
-# Fork me! #
-![fork](fork.png)
-
-!SLIDE commandline
-# Add the new remote #
-![remote](remote.png)
-
-    $ git remote add github git@github.com:georgebashi-test/git-workshop.git
-    $ git push github master
-    Counting objects: 9, done.
-    Delta compression using up to 4 threads.
-    Compressing objects: 100% (6/6), done.
-    Writing objects: 100% (6/6), 116.58 KiB, done.
-    Total 6 (delta 1), reused 0 (delta 0)
-    To git@github.com:georgebashi-test/git-workshop.git
-       54c9698..90446e7  master -> master
+!SLIDE commandline incremental
+# Push your changes to Github #
+    $ git push origin master
+    Counting objects: 7, done.
+    Delta compression using up to 2 threads.
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (5/5), 628 bytes, done.
+    Total 5 (delta 2), reused 0 (delta 0)
+    To git@github.com:georgebashi/git-workshop.git
+       a077d82..da418d1  master -> master
 
 !SLIDE
 # Send me a pull request #
