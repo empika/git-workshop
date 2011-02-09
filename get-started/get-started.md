@@ -49,6 +49,7 @@
 !SLIDE commandline incremental
 # Create a feature branch #
     $ git checkout -b add-joke
+    Switched to a new branch 'add-joke'
 
 !SLIDE commandline incremental
 # Prepare a patch #
@@ -89,6 +90,16 @@
     ...
 
     (press q to exit)
+
+!SLIDE commandline incremental
+# Merge back to master #
+    $ git checkout master
+    Switched to branch 'master'
+    $ git merge add-joke
+    Updating ab0b05f..88cc3b3
+    Fast-forward
+     programming-jokes/jokes.md |    3 +++
+     1 files changed, 3 insertions(+), 0 deletions(-)
 
 !SLIDE commandline incremental
 # Push your changes to Github #
