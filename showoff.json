@@ -3,6 +3,7 @@
   "sections": [
     {"section": "about-me"},
     {"section": "get-started"},
+    {"section": "tips-and-cool-stuff"},
     {"section": "programming-jokes"}
   ]
 }
